@@ -96,3 +96,18 @@ function OtherSkills(){
 function contactme(){
     window.location.href = "contact.html"
 }
+
+function languages(){
+    window.location.href = "about.html#languages";
+}
+
+function scrollToLanguages(){
+    var lgSection = document.getElementById("languages");
+        if (lgSection) {
+            lgSection.scrollIntoView({ behavior: "smooth" });
+        }
+}
+
+function AboutTheSite(){
+    window.location.href = "website.html";
+}
