@@ -1,0 +1,305 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #f3f1f1;
+    background-color: #161616;
+    justify-content: center;
+}
+
+header {
+    background-color: #0D0D0D;
+    color: rgb(175, 175, 175);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+    background-color: #0D0D0D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Additional CSS for image buttons */
+nav ul li a img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+nav ul li a:hover img {
+    opacity: 0.7;
+}
+
+/* Rest of the CSS remains the same */
+
+/* Additional styling for the contact form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #523E8F;
+}
+
+/* Rest of the CSS remains the same */
+
+/* Existing CSS styles remain unchanged */
+
+/* Additional styling for navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 0, 0); /* Change to your desired hover color */
+}
+
+/* footer font */
+.footer-line {
+    font-family: monospace; /* Replace 'YourInlineFont' with the desired font name */
+}
+
+   
+/* Image */
+.circular-image {
+    width: 100%; /* Ensure the container takes up the full width */
+    text-align: center;
+}
+
+.circular-image img {
+    width: 138px; /* Adjust the size of the circular image */
+    height: 150px; /* Adjust the size of the circular image */
+    border-radius: 50%;
+    filter: grayscale(100%); /* Converts the image to black and white */
+}
+
+
+/* 1 */
+.btn-1 {
+    transition: all 0.3s ease;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Transparent black border */
+    background-color: white;
+    color: black; /* Set initial text color to black */
+    padding: 10px 15px;
+    cursor: pointer;
+    outline: 2px solid transparent; /* Add transparent outline */
+    font-family: monospace;
+}
+
+.btn-1:hover {
+    background-color: black;
+    color: white; /* Change text color to white on hover */
+    box-shadow: 0px 0px 20px 0px #fff9,
+                0px 0px 5px 0px #fff9,
+                0px 0px 20px 0px #0002,
+                0px 0px 5px 0px #0001;
+    outline-color: white; /* Change outline color to white on hover */
+}
+
+/* buttons in contact */
+#contactForm2 {
+    text-align: center;
+}
+
+.custom-btn2 {
+    display: block; /* Make the buttons a block element */
+    margin: 10px auto; /* Add margin for spacing between buttons and center them */
+    background-color: black;
+}
+
+/* 12 */
+.btn-12{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+    background-color: transparent;
+    font-family: monospace;
+  }
+  .btn-12 span {
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    border: 2px solid #000;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btn-12 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12:hover span:nth-child(1) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn-12:hover span:nth-child(2) {
+    background: #e0e5ec;
+    color: #e0e5ec;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+
+  .btn-12:hover {
+    background-color: transparent !important; /* Set hover background color to transparent */
+    color: white !important; /* Set hover text color to white */
+    border: white;
+}
+
+
+/* index button */
+.custom-btn3 {
+    display: inline-block; /* Set display property to inline-block */
+    margin-right: 10px; /* Add margin for spacing between buttons */
+}
+/* Cloud Image cloud */
+
+.hexagon-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px; /* Adjust as needed */
+}
+
+.hexagon {
+    width: 100px; /* Adjust the size of your hexagon */
+    height: 57.74px; /* Height is 1.732 * (width / 2) */
+    background-color: #3498db; /* Background color */
+    position: relative;
+    margin: 5px; /* Adjust the margin */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.hexagon img {
+    width: 100%; /* Make the image fill the hexagon */
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hexagon::before, .hexagon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon::before {
+    top: -28.87px; /* -1/2 * height of the hexagon */
+    border-bottom: 28.87px solid #3498db; /* Border color */
+}
+
+.hexagon::after {
+    bottom: -28.87px; /* -1/2 * height of the hexagon */
+    border-top: 28.87px solid #3498db; /* Border color */
+}
+
+/* Additional styles for hover effect */
+.hexagon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hexagon:hover .hexagon-text {
+    opacity: 1;
+}

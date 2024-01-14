@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="skillstyle.css">
+    <script src="script.js" defer></script>
+    <style>
+        .hexagon-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 600px; /* Adjust as needed */
+            margin: auto; /* Center the hexagons */
+        }
+
+        h2 {
+            font-size: 45px; /* You can adjust the size as needed */
+        }
+
+        .hexagon {
+            width: 100px; /* Adjust the size of your hexagon */
+            height: 100px; /* Height is 1.732 * (width / 2) */
+            background-color: #3498db; /* Background color */
+            position: relative;
+            margin: 5px; /* Adjust the margin */
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 50%; /* Make it a circle */
+        }
+
+        .hexagon img {
+            width: 100%; /* Make the image fill the hexagon */
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%; /* Clip to a circle */
+        }
+
+        /* Additional styles for hover effect */
+        .hexagon-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            color: white; /* Set text color */
+        }
+
+        .hexagon:hover .hexagon-text {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- Add your CSS links or styles here if needed -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Aditya Varma Penmetsa</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="Facts.html">Others</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Your content goes here -->
+
+    <Section id="Programming">
+        <h2>Programming Languages</h2>
+        <p>I have previously used the following programming Languages and tools for various projects.</p>
+        <div class="hexagon-container">
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Bootstrap.png" alt="Bootstrap">
+                <div class="hexagon-text">Bootstrap</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/CS.png" alt="c#">
+                <div class="hexagon-text">C#</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/java.png" alt="Java">
+                <div class="hexagon-text">Java</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Mysql.avif" alt="Mysql">
+                <div class="hexagon-text">Mysql</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Postgres.png" alt="Postgres">
+                <div class="hexagon-text">Postgres</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/py.png" alt="Python">
+                <div class="hexagon-text">Python</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/R.png" alt="R">
+                <div class="hexagon-text">R</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/HTML.png" alt="HTML">
+                <div class="hexagon-text">HTML</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/css.png" alt="CSS">
+                <div class="hexagon-text">CSS</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/js.png" alt="JS">
+                <div class="hexagon-text">JS</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Android.jpeg" alt="Android">
+                <div class="hexagon-text">Android</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Git.png" alt="Git">
+                <div class="hexagon-text">Git</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/cpp.png" alt="CPP">
+                <div class="hexagon-text">CPP</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Docker.png" alt="Docker">
+                <div class="hexagon-text">Docker</div>
+            </div>
+            <div class="hexagon">
+                <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/c.png" alt="C">
+                <div class="hexagon-text">c</div>
+            </div>
+            <!-- Add more hexagons with images and unique text as needed -->
+        </div>
+        </Section>
+
+        <Section id="Tools">
+            <h2>Software Tools</h2>
+            <p>I have previously used the following Software tools for various projects.</p>
+            <div class="hexagon-container">
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/blender.webp" alt="Blender">
+                    <div class="hexagon-text">Blender</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/excel.png" alt="Excel">
+                    <div class="hexagon-text">Excel</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/figma.png" alt="Figma">
+                    <div class="hexagon-text">Figma</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/AI.png" alt="Illuslator">
+                    <div class="hexagon-text">Illuslator</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Notion.png" alt="Notion">
+                    <div class="hexagon-text">Notion</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/pp.png" alt="Power Point">
+                    <div class="hexagon-text">Power Point</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Tableau.png" alt="Tableau">
+                    <div class="hexagon-text">Tableau</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Trello.webp" alt="Tello">
+                    <div class="hexagon-text">Tello</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/ur.avif" alt="UR Engine">
+                    <div class="hexagon-text">UR Engine</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/word.png" alt="Word">
+                    <div class="hexagon-text">Word</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/XD.png" alt="XD">
+                    <div class="hexagon-text">XD</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/Power BI.png" alt="P BI">
+                    <div class="hexagon-text">P BI</div>
+                </div>
+                <div class="hexagon">
+                    <img src="/Users/saisriadityavarmapenmetsa/Documents/Personal Projects/mywebsite/images/g.png" alt="G-Suite">
+                    <div class="hexagon-text">G-Suite</div>
+                </div>
+                <!-- Add more hexagons with images and unique text as needed -->
+            </div>
+            </Section>
+
+
+            <Section id="Others">
+                <h2>Other Non Technical Skills</h2>
+                <p>I have Applied the following concepts and methodologies for various projects.</p>
+                <div class="skill-container">
+                    <ul class="grid">
+                        <li class="grid-item">Agile Development (Scrum)</li>
+                        <li class="grid-item">Process Management</li>
+                        <li class="grid-item">Scheduling</li>
+                        <li class="grid-item">Task Management</li>
+                        <li class="grid-item">Case writing</li>
+                        <li class="grid-item">Descision Tree Approach</li>	
+                        <li class="grid-item">Probability Evaluation</li>
+                        <li class="grid-item">Framing</li>	
+                      </ul>
+                </div>
+                </Section>
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p><span class="footer-line">&copy; 2024 Sai Sri Aditya Varma Penmetsa. All rights reserved.</span></p>
+    </footer>
+
+</body>
+</html>

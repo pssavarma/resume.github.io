@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        #contactForm {
+            max-width: 400px; /* Set a maximum width for the form */
+            margin: 0 auto; /* Center the form horizontally */
+            text-align: justify;
+            font-family: monospace;
+        }           
+
+        label {
+            display: block; /* Make labels block-level to stack them vertically */
+            margin-bottom: 5px; /* Add some space between labels and input fields */
+        }
+
+        input, textarea {
+            width: 100%; /* Make input fields and textarea take up full width */
+            padding: 8px; /* Add padding to input fields and textarea */
+            margin-bottom: 10px; /* Add some space between input fields and textarea */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+    <title>contact me</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <a href="index.html">Aditya Varma Penmetsa</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Learnings</a></li>
+                <li><a href="Facts.html">Others</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div>
+            <h1>Contact Me 📧</h1>
+        </div>
+        <div>
+            <p>Feel free to reach out to me using the form below.</p>
+        </div>
+        
+        <div>
+        <form id="contactForm" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <!-- <button type="button" onclick="sendEmail()">Send Message</button> -->
+            <button type="button" class="custom-btn btn-1" onclick="sendEmail()">Send message</button>
+        </form>
+        <div style="margin-bottom: 4em;"></div>
+            <h3 style="margin-bottom: 2.2em;"><b>👇 Let's be in touch 👇</b></h3>
+            <form id="contactForm2">
+                <button style="margin-bottom: 1.5em;" type="button" class="custom-btn2 btn-12" onclick="openLinkedIn()"><span>Lets Connect!</span><span>Linkedin</span></button>
+                <button style="margin-bottom: 1.5em;" type="button" class="custom-btn2 btn-12" onclick="openMail()"><span>Mail me!</span><span>Mail</span></button>
+                <button style="margin-bottom: 1.5em;" type="button" class="custom-btn2 btn-12" onclick="openGithub()"><span>Check it!</span><span>Github</span></button>
+            </form>
+        </div>
+
+        
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><span class="footer-line">&copy; 2024 Sai Sri Aditya Varma Penmetsa. All rights reserved.</span></p>
+    </footer>
+
+    <script>
+        function sendEmail() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+    
+            var mailtoLink = 'mailto:p.s.s.a.varma@gmail.com?subject=' + encodeURIComponent(subject) +
+                             '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+    
+            window.location.href = mailtoLink;
+        }
+
+        function openLinkedIn() {
+            window.location.href = "https://www.linkedin.com/in/aditya-varma-saisri/"; 
+        }
+
+        function openMail() {
+            window.location.href = "mailto:p.s.s.a.varma@gmail.com"; 
+        }
+
+        function openGithub() {
+            window.location.href = "https://github.com/pssavarma"; 
+        }
+    </script>
+
+</body>
+</html>
+
