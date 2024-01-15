@@ -86,11 +86,11 @@ function Programming(){
 }
 
 function Tools(){
-    window.location.href = "skills.html#Tools";
+    window.location.href = "Facts.html#Tools";
 }
 
 function OtherSkills(){
-    window.location.href = "skills.html#Others";
+    window.location.href = "Facts.html#Others";
 }
 
 function contactme(){
