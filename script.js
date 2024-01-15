@@ -86,11 +86,11 @@ function Programming(){
 }
 
 function Tools(){
-    window.location.href = "Facts.html#Tools";
+    window.location.href = "skills.html#Tools";
 }
 
 function OtherSkills(){
-    window.location.href = "Facts.html#Others";
+    window.location.href = "skills.html#Others";
 }
 
 function contactme(){
@@ -110,4 +110,12 @@ function scrollToLanguages(){
 
 function AboutTheSite(){
     window.location.href = "website.html";
+}
+
+function Intrests(){
+    window.location.href = "Facts.html#Intrests"
+}
+
+function Intrests(){
+    window.location.href = "Facts.html#Facts"
 }
