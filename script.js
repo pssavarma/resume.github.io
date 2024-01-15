@@ -116,6 +116,6 @@ function Intrests(){
     window.location.href = "Facts.html#Intrests"
 }
 
-function Intrests(){
+function Facts(){
     window.location.href = "Facts.html#Facts"
 }
